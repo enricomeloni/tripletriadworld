@@ -1,0 +1,54 @@
+﻿body {
+    background-color:black;
+}
+
+main
+{
+    background-image:url(../img/info-grad.png);
+    background-size:100% 100%;
+
+    border-style:outset;
+    border-color:gray;
+    border-width:6px;
+
+    color:white;
+    text-align:center;
+    width:60%;
+    position:absolute;
+    left:50%;
+    top:30%;
+    transform:translate(-50%, -50%);
+}
+
+main h1
+{
+    color:yellow;
+}
+
+main p
+{
+    font-size:20px;
+    
+    margin-left:2px;
+    margin-right:2px;
+}
+
+main a
+{
+    display:inline-block;
+    color:white;
+    margin-top:20px;
+    font-size:30px;
+    margin-bottom:20px;
+    text-decoration:none;
+    border-style:solid;
+    border-color:white;
+    border-radius:10px;
+    padding:5px 5px 5px 5px;
+}
+
+main a:visited
+{
+    text-decoration:none;
+    color:white;
+}

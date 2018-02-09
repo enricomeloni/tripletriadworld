@@ -1,0 +1,201 @@
+#selection
+{
+	
+	width:700px;
+	background-image:url("../img/info-grad.png");
+	background-size:100% 100%;
+    border-style:outset;
+    border-width:5px;
+    border-radius:6px;
+    border-color:grey;
+	position:absolute;
+	top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+	text-align:center;
+	padding-bottom:20px;
+	padding-top:1px;
+}
+
+#selection  #info
+{
+	height:12px;
+	width:35px;
+	position:relative;
+	top:8px;
+	left:6px;	
+}
+
+div #login
+{
+	width:200px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+div #register
+{
+	padding-top:30px;
+	width:200px;
+	margin-left:240px;
+	margin-right:260px;
+	margin-bottom:10px;
+}
+
+div #documentation
+{
+	width:250px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+
+
+div img
+{
+	float:left;
+}
+
+#register p
+{
+	height:32px;
+	width:200px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+
+#login p
+{
+	height:32px;
+	width:130px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#documentation p
+{
+	height:32px;
+	width:250px;
+	position:relative;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div p
+{
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+div span
+{
+	position:absolute;
+	left:32px;
+	cursor:pointer;
+}
+
+div a
+{
+    color:white;
+    text-decoration:none;
+}
+
+div
+{
+	color:white;
+	font-weight:bold;	
+	font-size:20px;
+}
+
+body
+{
+	background-image:url("../img/bg.jpg");
+}	
+
+#title
+{
+	width:700px;
+	text-align:center;
+	margin-top:30px;
+	margin-left:auto;
+	margin-right:auto;
+	color:white;
+	font-weight:bold;
+	font-size:70px;
+	font-family:tripletriad;
+}
+
+#loginForm
+{
+
+}
+
+.hidden
+{
+    display:none;
+}
+
+#selection input
+{
+    display:block;
+    border-bottom-style:none;
+    width:200px;
+    height:25px;
+    outline-width:0px;
+    text-align:center;
+}
+
+#selection input:first-child
+{
+    border-bottom-width:0px;
+    border-bottom-color:grey;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    
+}
+#selection input:last-of-type
+{
+    border-top-width:1px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    margin-bottom:10px;
+}
+
+#confirmRegistration
+{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#confirmRegistration p
+{
+    position:relative;
+    left:-0.9em;
+}
+
+#errorLogin, #errorRegistration
+{
+    color:yellow;
+}
+
+@font-face
+{
+	font-family: tripletriad;
+    src: url(SimplySquare.ttf);
+}
+
+.error
+{
+    background-color:rgba(255, 0, 0, 0.47);
+}
+
+#errorLogin p
+{
+    width:auto;
+}

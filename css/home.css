@@ -1,0 +1,371 @@
+
+html,body
+{
+	margin: auto 0 auto 0;
+}
+
+body
+{
+	background-color:black;
+}
+
+#rightBar
+{
+	position:absolute;
+	right:12px;
+	height:100%;
+	width:20%;
+    color:white;
+    text-align:center;
+}
+
+#menu
+{
+	background-image:url("../img/info-grad.png");
+	background-size:100% 100%;
+	border-style:outset;
+	border-color:grey;
+	border-radius:5px;
+	height:68%;
+	top:10px;
+	position:relative;
+}
+
+#menu h2
+{
+    font-size:40px;
+}
+
+#menu ul
+{
+    list-style:none;
+    font-size:25px;
+    font-weight:bold;
+}
+
+#menu ul li
+{
+    margin-top:20px;
+    margin-bottom:20px;
+    cursor:pointer;
+    margin-left:-30px;
+}
+
+#statInfo
+{
+	background-image:url("../img/info-grad.png");
+	background-size:250px 100%;
+	border-style:outset;
+	border-color:grey;
+	border-radius:5px;
+	height: 26%;
+	top:15px;
+	position:relative;
+    overflow-y:auto;
+    font-size:14px;
+}
+
+
+
+#helpBar
+{
+	width: 70%;
+	left:4%;
+	background-image:url("../img/info-grad.png");
+	background-size:100% 100%;
+	border-style:outset;
+	border-color:grey;
+	border-radius:5px;
+	height:10%;
+	top:10px;
+	position:absolute;
+	margin-left:auto;
+	margin-right:auto;
+    text-align:center;
+    color:white;
+    font-size:40px;
+    padding-top:1%;
+}
+
+#center
+{
+	position:absolute;
+	width:68%;
+	left:4%;
+	height:83%;
+	top:15%;
+	background-image:url("../img/info-grad.png");
+	background-size:100% 100%;
+	border-style:outset;
+	border-color:grey;
+	border-radius:5px;
+    color:white;
+    padding-left:1%;
+    padding-right:1%;
+    overflow-y:auto;
+}
+
+#center h2
+{
+    text-align:center;
+}
+
+#center p
+{
+    text-align:center;
+}
+
+#center span.play
+{
+    cursor:pointer;
+    font-size:50px;
+    text-align:center;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+
+    margin-top:150px;
+    text-decoration:none;
+    border-style:solid;
+    border-radius:16px;
+}
+
+#center span.play
+{
+    text-decoration:none;
+    color:white;
+}
+
+.hidden
+{
+    display:none;
+}
+
+
+
+
+
+
+.wrapper 
+{
+	position:relative;
+    width:100px;
+}
+
+.positioned
+{
+    width:151px;
+    height:151px;
+}
+
+.wrapper .picture
+{
+    width:100%;
+}
+
+.wrapper div
+{
+    position:absolute;
+    top:12px;
+    left:12px;
+    width:30%;
+    height:30%;
+}
+
+.didascaly
+{
+    float:left;
+    margin-left:5px;
+    margin-right:5px;
+    margin-bottom:30px;
+}
+
+.didascaly span
+{
+    position:relative;
+    left:10px;
+}
+
+.wrapper .top
+{
+    position: absolute;
+    left: 30%;
+    top: 0px;
+    width: 35%;
+}
+
+.wrapper .bot 
+{
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    left: 30%;
+}
+
+.wrapper .right
+{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 35%;
+}
+
+.wrapper .left
+{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    width: 35%;
+}
+
+.elementIcon
+{
+    position:absolute;
+    right:3px;
+    top:10px;
+    width:30px;
+}
+
+.wrapper.positioned .elementIcon
+{
+    width:20%;
+    right:5px;
+    top:10px;
+}
+
+.elementModifier
+{
+    position: absolute;
+    width: 30%;
+    bottom: 10px;
+    left: 45%;
+}
+
+#shopView
+{
+    position:relative;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+#shopCard
+{
+    position:relative;
+    text-align: center;
+    margin-top: 50px;
+    left:0%;
+}
+
+#shopView div p
+{
+    text-align:center;
+    width:100%;
+    font-size:30px;
+    margin-top:5px;
+}
+
+#dispWin
+{
+    position: absolute;
+    border-style: outset;
+    border-color: gray;
+    border-width: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url(../img/info-grad.png); 
+    background-size:100% 100%; 
+    padding: 25px 25px;
+}
+
+#dispWin img
+{
+    background-image: url(../img/grad-blue.png);
+    background-size:100% 100%;
+}
+
+#dispWin span
+{
+    color:red;
+    cursor:pointer;
+    position:absolute;
+    top:0px;
+    right:0px;
+    font-size:25px;
+}
+
+.error
+{
+    font-size:25px;
+    color:yellow;
+    font-weight:bold;
+}
+
+/* #shopView div.scrollLeftBegin
+{
+    animation-name:scrollLeftBegin;
+    animation-duration:1s;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+}
+
+@keyframes scrollLeftBegin
+{
+    from 
+    {
+        left:0%;
+    }
+
+    to {
+        left:-100%;
+    }
+}
+
+*/
+
+
+#shopView button
+{
+    width:150px;
+    height:50px;
+    font-size:30px;
+    border-radius:20px;
+    border-style:solid;
+    border-width:3px;
+    border-color:black;
+    cursor:pointer;
+}
+
+#shopView .arrow
+{
+    width:50px;
+    position:absolute;
+    top:50%;
+    cursor:pointer;
+}
+
+#cardView p
+{
+    clear: left;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+#leftScroll
+{
+    left:0px;
+    transform:translate(0,-50%) rotate(180deg);
+}
+
+#rightScroll
+{
+    right:0px;
+    transform:translate(0,-50%);
+}
+
+
+
+

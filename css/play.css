@@ -1,0 +1,621 @@
+.wrapper 
+{
+	position:relative;
+    
+}
+
+.positioned
+{
+    
+    height:100%;
+    width:100%;
+}
+
+.inHand
+{
+    width:100%;
+    height:20%;
+    margin: 0 0 0 0;
+}
+.wrapper .picture
+{
+    height:100%;
+    width:100%;
+}
+
+.wrapper div
+{
+    position:absolute;
+    top:12px;
+    left:12px;
+    width:30%;
+    height:30%;
+}
+
+.wrapper .top
+{
+    position: absolute;
+    left: 30%;
+    top: 0px;
+    width: 35%;
+}
+
+.wrapper .bot 
+{
+    position: absolute;
+    bottom: 0;
+    width: 35%;
+    left: 30%;
+}
+
+.wrapper .right
+{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 35%;
+}
+
+.wrapper .left
+{
+    position: absolute;
+    left: 0px;
+    top: 30%;
+    width: 35%;
+}
+
+.elementIcon
+{
+    position:absolute;
+    right:3px;
+    top:10px;
+    width:30px;
+}
+
+.wrapper.positioned .elementIcon
+{
+    width:45px;
+    right:5px;
+    top:20px;
+}
+
+html,body
+{
+    width:100%;
+    height:100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color:#4E2C16;
+    overflow:hidden;
+}
+
+#ruleSelection
+{
+    position:absolute;
+    z-index:3;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    background-image:url("../img/info-grad.png");
+    background-size:100% 100%;
+    width:210px;
+    padding-left:90px;
+    border-style:solid;
+    border-color:gray;
+    border-radius:7px;
+    padding-bottom:20px;
+    color:white;
+    font-weight:bold;
+}
+
+#ruleSelection input
+{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+
+#ruleSelection button
+{
+    margin-left:30px;
+}
+
+
+#playZone
+{
+    position:relative;
+    background-image: url('../img/board-mat.jpg');
+    background-size:80% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width:100%;
+    height:100%;
+}
+
+
+#playground
+{
+    border-color:red;
+    border-style:none;
+    width:38%;
+    height:85%;
+    position:absolute; 
+    left:50%;
+    top:50%; /*left e right son basati sul contenitore*/
+    transform: translate(-50%, -50%); /* questo sull'elemento  */
+}
+ 
+.matrixPosition
+{
+    position:relative;
+    width:32%;
+    height:32%;
+    display:inline-block;
+    margin: 0.3% 0.6% 0.2% 0.7%;
+    z-index:0;
+}
+
+.hand
+{
+    width:9%;
+    height:81%;
+    position:absolute;
+    top:52%;
+    transform: translate(0%, -55%)
+}
+
+#leftHand
+{
+    left:0;
+}
+
+/*#leftHand .wrapper
+{
+    background-image:url('../img/grad-blue.png');
+    background-size:contain;
+} */
+
+#leftHand .selected
+{
+    left:20px;
+}
+
+#rightHand
+{
+    right:0;
+}
+
+#broadcast
+{
+    position:relative;
+    display:none;
+    z-index:3;
+    width:600px;
+    margin-right: auto;
+    margin-left: auto;
+    top: 200px
+}
+
+#broad-pic
+{
+    width:100%;
+}
+
+
+.points
+{
+    position:absolute;
+    bottom:10px;
+    width:60px;
+}
+
+.matElem
+{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:40px;
+    transform:translate(-50%,-50%);
+}
+
+.elementModifier
+{
+    position: absolute;
+    width: 50%;
+    bottom: 10px;
+    left: 45%;
+}
+
+#leftPoints
+{
+    left:10px;
+}
+
+#rightPoints
+{
+    right:10px;
+}
+
+#barButton
+{
+    background-image:url('../img/menu-icon.svg');
+    background-repeat:no-repeat;
+    width:32px;
+    height:32px;
+    position:absolute;
+    right:10px;
+    top:7px;
+    background-color:rgba(167,158,141,0.63);
+    z-index:7;
+    border-style:solid;
+    border-radius:13px;
+    border-color:white;
+    cursor:pointer;
+}
+
+#rightBar
+{
+    background-image:url("../img/info-grad.png");
+    background-size:100% 100%;
+    z-index:6;
+    height:100%;
+    position:absolute;
+    right:0;
+    width:0%;
+    overflow-x:hidden;
+}
+
+#rightBar h2
+{
+    color:white;
+    text-align:center;
+}
+
+#rightBar ul
+{
+    list-style:none;
+    margin-top:20%;
+}
+
+#rightBar li
+{
+    color:white;
+    font-size:30px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#rightBar li span
+{
+    cursor:pointer;
+}
+
+.unfold
+{
+    animation-name:unfold;
+    animation-duration:0.6s;
+    animation-play-state:running;
+    animation-fill-mode:forwards;
+    width:25%;
+    border-left-color:grey;
+    border-radius:2px;
+    border-left-style:outset;
+}
+
+.fold
+{
+    border-left-style:none;
+    animation-fill-mode:forwards;
+    animation-name:fold;
+    animation-duration:0.6s;
+}
+
+#gameFinish
+{
+    position:absolute;
+    left:50%;
+    width:60%;
+    background-image:url('../img/info-grad.png');
+    background-size:100% 100%;
+    display:none;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+
+.appear
+{
+    bottom: 50%;
+    transform: translate(-50%,50%);
+    animation-name:appear;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+    border-style:outset;
+	border-color:grey;
+	border-radius:5px;
+}
+
+.disappear
+{
+    transform: translate(-50%,0);
+    bottom: 0;
+    animation-name:disappear;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}
+
+@keyframes unfold
+{
+    from {width:0%;}
+    to {width:25%;}
+}
+
+@keyframes fold
+{
+    from {width:25%}
+    to {width:0%}
+}
+
+@keyframes appear 
+{
+    from {
+        
+        bottom: 0;
+        transform: translate(-50%,100%) scale(0);
+        border-style:none;
+    }
+
+    to {
+        bottom: 50%;
+        transform: translate(-50%,50%) scale(1);
+        border-style:outset;
+	    border-color:grey;
+	    border-radius:5px;
+    }
+}
+
+@keyframes disappear 
+{
+    from 
+    {
+        bottom: 50%;
+        transform: translate(-50%,50%) scale(1);
+        border-style:outset;
+        border-width:2px;
+	    border-color:grey;
+	    border-radius:5px;
+    }
+
+    to 
+    {
+        transform: translate(-50%,0)  scale(0);
+        bottom: 0;
+        display:none;
+       
+        border-style:none;
+    }
+
+}
+
+#cardSelector
+{
+    display:none;
+}
+
+#gameRecap
+{
+    display:none;
+}
+
+#cardSelector img 
+{
+    width:18%;
+    height:140px;
+    margin-left:5px;
+    margin-right:5px;
+    background-image: url('../img/grad-red.png');
+    background-size: 100% 100%;
+}
+
+#gameRecap img
+{
+    width:18%;
+    height:140px;
+    margin-left:5px;
+    margin-right:5px;
+    background-image: url('../img/grad-red.png');
+    background-size: 100% 100%;
+    margin-bottom:20px;
+}
+
+#gameRecap button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+#gameRecap p
+{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+#cardSelector img.choose
+{
+    margin-left:1px;
+    margin-right:1px;
+    border-width:4px;
+    border-style:solid;
+    border-color:red;
+}
+
+#cardSelector p
+{
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    font-size:18px;
+}
+
+#cardSelector button
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+
+#cardSelection
+{
+    position:absolute;
+    z-index:4;
+    background-color:red;
+    width:50%;
+    height:90%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    background-image:url('../img/info-grad.png');
+    background-size:100% 100%;
+    border-style:solid;
+    border-color:gray;
+    border-radius:15px;
+    display:none;
+}
+
+#cardList
+{
+    width:67%;
+    height:100%;
+    float:left;
+    margin:0 0 0 0;
+    margin-right:3%;
+    padding-left:5%;
+    color:white;
+    font-size:larger;
+    font-weight:bold;
+    border-right-style:solid;
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+
+#cardPreview
+{
+    position:relative;
+    width:20%;
+    height:94%;
+    float:left;
+    margin-right:2.5%;
+    margin-top: 5%;
+    padding: 0 0 0 0;
+}
+
+#cardList p
+{
+    cursor:pointer;
+}
+
+#cardList hr
+{
+    margin-right:30px;
+    margin-left:-20px
+}
+
+#confirm
+{
+    width:80px;
+    position:absolute;
+    bottom:5px;
+    left:20px;
+    cursor:pointer;
+}
+
+#turnPointer
+{
+    position: absolute;
+    width: 100px;
+    left: 50%;
+}
+
+#turnPointer.begin
+{
+    display:none;
+}
+
+#turnPointer.beginLeft
+{
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    left:10%;
+    top:10%;
+}
+
+#turnPointer.beginRight
+{
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    left:83%;
+    top:10%;
+}
+
+@keyframes goLeft
+{
+    from 
+    {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+        left:83%;
+        top:10%;
+    }
+    to 
+    {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+        left:10%;
+        top:10%;
+    }
+}
+
+@keyframes goRight
+{
+    from 
+    {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+        left:10%;
+        top:10%;
+    }
+    to 
+    {
+        transform: rotate(0deg);
+        transform-origin: 50% 50%;
+        left:83%;
+        top:10%;
+    }
+}
+
+#turnPointer.goLeft
+{
+    animation-name:goLeft;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;  
+}
+
+#turnPointer.goRight
+{
+    animation-name:goRight;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-iteration-count:1;
+}

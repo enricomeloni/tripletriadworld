@@ -1,0 +1,102 @@
+﻿body {
+    background-color:black;
+}
+
+main
+{
+    width:90%;
+    margin-left:2%;
+    margin-right:2%;
+    background-image:url(../img/info-grad.png);
+    background-size:100% 100%;
+
+    border-style:outset;
+    border-width:5px;
+
+    padding: 3% 3%;
+    color:white;
+}
+
+p.legend
+{
+    text-align:left;
+    font-weight:bold;
+}
+
+ol
+{
+}
+
+h1,h2,h3,h4
+{
+    margin-top:30px;
+    color:yellow;
+    text-align:center;
+}
+
+img.full
+{
+    width:100%;
+    margin-bottom:50px;
+}
+
+img
+{
+    float:left;
+}
+
+ul
+{
+    overflow:hidden;
+}
+
+li span
+{
+    font-size:larger;
+    font-weight:bold;
+}
+
+li
+{
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+.top
+{
+    position:fixed;
+    right:30px;
+    bottom:10px;
+}
+
+.top img
+{
+    width:50px;
+}
+
+.home
+{
+    color:white;
+    position:fixed;
+    right:35px;
+    top:20px;
+    border-style:solid;
+    border-color:white;
+    border-width:3px;
+    border-radius:10px;
+    padding:5px 5px;
+}
+
+a.home
+{
+    background-image:url(../img/info-grad.png);
+    background-size:100% 100%;
+    color:white;
+    text-decoration:none;
+}
+
+a:visited.home
+{
+    color:white;
+    text-decoration:none;
+}
